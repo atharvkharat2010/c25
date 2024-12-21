@@ -6,22 +6,20 @@
        <p id="hour"></p>
        <p id="great"></p>
        <script>
-        function myFunction(){
+        function myFunction() {
         var greeting;
         var time = new Date().getHour();
 
-        if( time < 10 ){
+        if ( time < 10 ){
             greeting = "Good Morning";
-
         }
-        else if( time < 20 ){
+        else if ( time < 20 ){
             greeting = "Good Day"; 
-
         }
-        else{
+        else {
             greeting = "Good Evening";
         }
-      document.getElementById("hour").innerHTML="current our is:"+time;
+      document.getElementById("hour").innerHTML="current hour is" +time;
       document.getElementById("great").innerHTML = greeting;
     }
        </script>
